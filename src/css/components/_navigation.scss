@@ -1,0 +1,47 @@
+body {
+	margin: 50px 0 0 0;
+	@media (max-width: 480px) {
+		margin: 0 0 50px 0;
+	}
+}
+.app-header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	.tab {
+		background-color: #fff;
+		margin: 0;
+		.tab-item {
+			a {
+				padding: 10px 15px;
+				&.badge[data-badge]::after {
+					top: 1rem;
+					right: 1rem;
+				}
+			}
+		}
+	}
+	@media (max-width: 480px) {
+		top: auto;
+		bottom: 0;
+		ul {
+			background-color: #fff;
+			border-bottom: none;
+			border-top: .1rem solid #c5c5c5;
+			li {
+				a {
+					border-bottom: none;
+					border-top: 0.2rem solid transparent;
+				}
+				&.active {
+					a {
+						border-top-color: #3b49af;
+						border-bottom: none;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.single-profile {
+	.profile-img {
+		width: 200px;
+		height: 200px;
+		margin: auto;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		border-radius: 100%;
+	}
+	.profile-movie-list {
+		padding: 10px;
+		cursor: pointer;
+		&:hover {
+			background-color: #eee;
+		}
+	}
+}

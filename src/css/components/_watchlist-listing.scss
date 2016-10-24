@@ -1,0 +1,15 @@
+.watchlist-listing {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	.watchlist-single {
+		padding: 5px 10px;
+		cursor: pointer;
+		.watchlist-single-title {
+			margin: 0;
+		}
+		&:hover {
+			background-color: #eee;
+		}
+	}
+}

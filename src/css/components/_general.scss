@@ -1,0 +1,37 @@
+img {
+	max-width: 100%;
+}
+
+@media (max-width: 480px) {
+	.hidden-xs {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.hidden-sm {
+		display: none;
+	}
+}
+
+.go-back {
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	left: 10px;
+	top: 52px;
+	background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 22px;
+	cursor: pointer;
+	@media (max-width: 480px) {
+		top: 10px;
+	}
+}
+
+.loading.loading-full {
+	height: calc(100vh - 50px);
+}

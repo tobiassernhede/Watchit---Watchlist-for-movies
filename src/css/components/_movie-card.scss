@@ -1,0 +1,31 @@
+.movie-card {
+	.card-header,
+	.card-image {
+		cursor: pointer;
+	}
+	.card-image {
+		width: 100%;
+		padding-bottom: 150%;
+		position: relative;
+		div {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-size: contain;
+			background-position: top center;
+		}
+		p {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+	    	transform: translate(-50%, -50%)
+		}
+	}
+	.card-title {
+	    display: -webkit-box;
+	    -webkit-line-clamp: 2;
+	    -webkit-box-orient: vertical;
+	    overflow: hidden;
+	    height: 40px;
+	}
+}
